@@ -1,18 +1,37 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+  <v-container fill-height fluid>
+    <v-row justify="center" align="center" align-content="center">
+      <v-col cols="12" sm="4">
+        <div class="centered">
+          <h1>Welcome</h1>
+        </div>
+      </v-col>
+      <v-col cols="12" sm="4">
+        <Login />
+      </v-col>
+    </v-row>
+  </v-container>
 </template>
 
 <script>
 // @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+import Login from "@/components/Login.vue";
 
 export default {
-  name: 'Home',
+  name: "Home",
   components: {
-    HelloWorld
-  }
-}
+    Login,
+  },
+};
 </script>
+
+<style scoped>
+
+.centered {
+  display: table-cell;
+  height: 80px;
+  width: 400px;
+  text-align: center;
+  vertical-align: middle;
+}
+</style>
