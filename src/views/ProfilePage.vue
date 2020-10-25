@@ -48,11 +48,24 @@
             </v-list-item>
 
             <v-card-actions>
-              <v-btn outlined rounded text> Button </v-btn>
+              <v-btn @click="notification = !notification" outlined rounded text> Notify </v-btn>
             </v-card-actions>
           </v-card>
         </v-col>
       </v-row>
+      <v-snackbar
+        v-model="notification"
+        absolute
+        bottom
+        color="success"
+        outlined
+        right
+      >
+      <v-avatar>
+        <img src="https://cdn.vuetifyjs.com/images/john.jpg" alt="John" />
+      </v-avatar>
+        You have a message from Alan Avins.
+      </v-snackbar>
     </v-container>
   </div>
 </template>
@@ -63,6 +76,9 @@ import Appbar from "../components/Appbar.vue";
 
 export default {
   name: "ProfilePage",
+  data: () => ({
+    notification: false
+  }),
   components: {
     Appbar,
   },
