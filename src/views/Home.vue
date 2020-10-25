@@ -3,7 +3,7 @@
     <v-row justify="center" align="center" align-content="center">
       <v-col cols="12" sm="4">
         <div class="centered">
-          <h1>Welcome</h1>
+          <h1 class="title" >Welcome</h1>
         </div>
       </v-col>
       <v-col cols="12" sm="4">

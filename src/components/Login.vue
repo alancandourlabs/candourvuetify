@@ -2,7 +2,7 @@
   <v-container fluid>
     <v-row no-gutters>
       <v-col>
-        <v-card elevation="10" shaped outlined>
+        <v-card elevation="10" >
           <v-col>
             <v-text-field label="Username" hide-details="auto"></v-text-field>
             <v-text-field label="Password"></v-text-field>

@@ -21,6 +21,12 @@ export default {
 </script>
 
 <style>
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap");
+
+.title {
+  font-family: 'Montserrat', sans-serif;
+}
+
 .nav-link {
   text-decoration: none;
 }
@@ -29,4 +35,5 @@ export default {
   display: unset;
   justify-content: space-around;
 }
+
 </style>
