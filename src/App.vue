@@ -21,6 +21,8 @@ export default {
 </script>
 
 <style>
+@import '../node_modules/bootstrap/scss/bootstrap.scss';
+@import '../node_modules/bootstrap-vue/src/index.scss';
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap");
 
 .title {

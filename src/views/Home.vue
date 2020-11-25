@@ -8,6 +8,7 @@
       </v-col>
       <v-col cols="12" sm="4">
         <Login />
+        <div class="alert alert-success">This is a sweet success message</div>
       </v-col>
     </v-row>
   </v-container>
